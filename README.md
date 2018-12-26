@@ -1,12 +1,5 @@
-# base-vue-webpack-template
+# Travis CI/CD 
 
-> Base Vue Webpack Template
+## 參考文章
 
-## Packages
-
-* jquery
-* bootstrap
-* font-awesome
-* vue-moment
-* vue-meta
-* vuex
+- [https://www.hwchiu.com/travisci-step-job-stage.html](https://www.hwchiu.com/travisci-step-job-stage.html)
