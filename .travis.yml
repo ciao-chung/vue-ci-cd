@@ -5,11 +5,14 @@ install:
   - yarn
 script:
   - yarn build
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  github-token: $GITHUB_TOKEN
-#  keep-history: true
-#  local-dir: ./dist
-#  on:
-#    branch: master
+deploy:
+  provider: pages
+  # 沒設定true dist會被砍掉
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+
+  # 設定為true時travis git push時會使用--force
+  keep-history: true
+  local-dir: ./dist
+  on:
+    branch: master
