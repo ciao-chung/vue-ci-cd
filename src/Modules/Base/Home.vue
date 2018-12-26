@@ -1,8 +1,8 @@
 <template>
   <div page="home">
     <img src="~/assets/logo.png">
-    <h1>home</h1>
-    <p class="home">home</p>
+    <h1>新版本</h1>
+    <p class="home">新版本</p>
   </div>
 </template>
 
