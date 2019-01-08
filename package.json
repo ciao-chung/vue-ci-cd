@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
+    "unit": "node node_modules/mocha-webpack/bin/mocha-webpack test/unit/**/*.js --webpack-config build/webpack.test.conf.js",
+    "unit:single": "node node_modules/mocha-webpack/bin/mocha-webpack --webpack-config build/webpack.test.conf.js",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "build": "node build/build.js"
@@ -57,6 +58,7 @@
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
+    "mocha-webpack": "^1.1.0",
     "nightwatch": "^0.9.12",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.9.3",
